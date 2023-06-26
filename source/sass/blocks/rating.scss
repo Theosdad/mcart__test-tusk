@@ -1,0 +1,29 @@
+.rating {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    background-color: #ebebeb;
+    padding: 12px;
+    border: 1px solid gray;
+    border-radius: 25px;
+
+    &__star {
+        color: grey;
+        cursor: pointer;
+
+        &:not(:first-child) {
+            margin-right: 5px;
+        }
+
+        &--filled {
+            color: goldenrod;
+        }
+
+        &:hover {
+            color: goldenrod;
+        }
+
+        &:hover ~ .rating__star {
+            color: goldenrod
+        }
+    }
+}

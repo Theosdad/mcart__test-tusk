@@ -1,14 +1,207 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Название проекта</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body class="page__body">
-    <header class="header">Шапка</header>
 
-    <script src="./js/script.js" defer></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Test task</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page__body">
+  <div class="site">
+    <header class="header">
+      <div class="header__container container">
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link nav__link--purple" href="#!">Личный кабинет</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--green" href="#!">Раздел 1</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--blue" href="#!">Раздел 2</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--orange" href="#!">Раздел 3</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--black" href="#!">Раздел 4</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--red" href="#!">Раздел 5</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container container--main">
+        <section class="form">
+          <div class="form__progress">
+            <h1>Заполните форму</h1>
+            <div class="form__progress-bar progress-bar">
+              <div class="progress-bar__step">1</div>
+              <div class="progress-bar__step">2</div>
+              <div class="progress-bar__step progress-bar__step--active">3</div>
+              <div class="progress-bar__step">4</div>
+              <div class="progress-bar__step">5</div>
+            </div>
+          </div>
+          <span class="form__slogan">Общая информация</span>
+          <form action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
+            <div class="form__wrapper">
+              <div class="form__input form__input--lastname">
+                <label for="lastname">Фамилия</label>
+                <input id="lastname" name="lastname" type="text" required>
+              </div>
+              <div class="form__input form__input--firstname">
+                <label for="firstname">Имя</label>
+                <input id="firstname" name="firstname" type="text" required>
+              </div>
+              <div class="form__input form__input--fathername">
+                <label for="fathername">Отчество</label>
+                <input id="fathername" name="fathername" type="text" required>
+              </div>
+              <div class="form__input form__input--name-change">
+                <legend>Меняли фамилию?</legend>
+                <div>
+                  <input id="name-change-yes" type="radio" name="name-change" value="yes" required>
+                  <label for="name-change-yes">Да</label>
+                  <input id="name-change-no" type="radio" name="name-change" value="no" required checked>
+                  <label for="name-change-no">Нет</label>
+                </div>
+              </div>
+              <div class="form__input form__input--gender">
+                <legend>Пол</legend>
+                <div>
+                  <input id="gender-male" type="radio" name="gender" value="male" required checked>
+                  <label for="gender-male">Муж</label>
+                  <input id="gender-female" type="radio" name="gender" value="female" required>
+                  <label for="gender-female">Жен</label>
+                </div>
+              </div>
+              <div class="form__input form__input--family-status">
+                <legend>Семейное положение</legend>
+                <select name="family-status" required>
+                  <option value="not-married">Не женат / Не замужем</option>
+                  <option value="married" selected>Женат / Замужем</option>
+                  <option value="divorced">Разведен / Разведена</option>
+                  <option value="widower">Вдовец / вдова</option>
+                </select>
+              </div>
+              <div class="form__input form__input--nationality">
+                <legend>Гражданство</legend>
+                <select name="nationality">
+                  <option value="russian-federation" selected>Российская Федерация</option>
+                  <option value="ukraine">Украина</option>
+                  <option value="armenia">Армения</option>
+                  <option value="belarus-republic">Республика Беларусь</option>
+                  <option value="georgia">Грузия</option>
+                </select>
+              </div>
+              <div class="form__input form__input--birthdate">
+                <legend>Дата рождения</legend>
+                <div>
+                  <select name="birth-day" id="day" required>
+                  </select>
+                  <select name="birth-month" id="month" required>
+                    <option value="" disabled selected>Месяц</option>
+                  </select>
+                  <select name="birth-year" id="year" required>
+                    <option value="" disabled selected>Год</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form__input form__input--birthplace">
+                <label for="birthplace">Место рождения</label>
+                <input id="birthplace" name="birthplace" type="text" required>
+                <span>Например: Россия, Комсомольск-на-Амуре</span>
+              </div>
+            </div>
+            <div class="form__input-wrapper">
+              <button type="button">Назад</button>
+              <button type="submit">Далее</button>
+            </div>
+          </form>
+        </section>
+        <aside class="side-column">
+          <p>⚹TutuRu&nbsp;&mdash; крупнейший сервис поиска, бронирования и&nbsp;покупки авиабилетов и&nbsp;ж/д билетов.
+          </p>
+          <p>Наша цель проста&nbsp;&mdash; делать наших клиентов счастливыми, а&nbsp;их&nbsp;путешествия незабываемыми.
+            Любое путешествие
+            начинается с&nbsp;поиска подходящих билетов и&nbsp;бронирования гостиниц. А&nbsp;мы&nbsp;делаем это
+            качественно, обеспечивая
+            самую лучшую поддержку благодаря собственному контакт-центру</p>
+        </aside>
+      </div>
+      <section class="components">
+        <div class="container components__container">
+          <h2>Компоненты</h2>
+          <div class="components__rating rating">
+            <div class="rating__star">
+              <svg aria-hidden="true" focusable="false" width="16" height="16">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons/stack.svg#icon-star"></use>
+              </svg>
+            </div>
+            <div class="rating__star">
+              <svg aria-hidden="true" focusable="false" width="16" height="16">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons/stack.svg#icon-star"></use>
+              </svg>
+            </div>
+            <div class="rating__star">
+              <svg aria-hidden="true" focusable="false" width="16" height="16">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons/stack.svg#icon-star"></use>
+              </svg>
+            </div>
+            <div class="rating__star">
+              <svg aria-hidden="true" focusable="false" width="16" height="16">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons/stack.svg#icon-star"></use>
+              </svg>
+            </div>
+            <div class="rating__star">
+              <svg aria-hidden="true" focusable="false" width="16" height="16">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons/stack.svg#icon-star"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="components__progress progress">
+            <div class="progress__bar"></div>
+            <div class="progress__label">0%</div>
+          </div>
+
+          <div class="components__buttons buttons">
+            <div>
+              <h2>&--big</h2>
+              <input type="button" class="buttons__example buttons__example--big" value="Кнопка Input">
+              <a href="#!" class="buttons__example buttons__example--big">Кнопка Link</a>
+              <div class="buttons__example buttons__example--big">Кнопка Div</div>
+            </div>
+            <div>
+              <h2>&--normal</h2>
+              <input type="button" class="buttons__example buttons__example--normal" value="Кнопка Input">
+              <a href="#!" class="buttons__example buttons__example--normal">Кнопка Link</a>
+              <div class="buttons__example buttons__example--normal">Кнопка Div</div>
+            </div>
+            <div>
+              <h2>&--small</h2>
+              <input type="button" class="buttons__example buttons__example--small" value="Кнопка Input">
+              <a href="#!" class="buttons__example buttons__example--small">Кнопка Link</a>
+              <div class="buttons__example buttons__example--small">Кнопка Div</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer class="footer">
+    <div class="footer__container container">
+      <p>Я стики-футер</p>
+    </div>
+  </footer>
+  <script src="./js/script.js" type="module"></script>
+</body>
+
 </html>

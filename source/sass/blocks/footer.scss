@@ -1,0 +1,14 @@
+.footer {
+    min-height: 60px;
+    background-color: cornflowerblue;
+
+    &__container {
+        padding: 15px;
+
+        p {
+            margin: 0;
+            text-align: center;
+            
+        }
+    }
+}

@@ -1,7 +1,16 @@
 /* GLOBAL */
 @import "global/variables";
 @import "global/global";
-@import "global/fonts";
 
 /* BLOCKS */
+@import "blocks/container";
 @import "blocks/header";
+@import "blocks/nav";
+@import "blocks/side-column";
+@import "blocks/form";
+@import "blocks/progress-bar";
+@import "blocks/footer";
+@import "blocks/components";
+@import "blocks/rating";
+@import "blocks/progress";
+@import "blocks/buttons";

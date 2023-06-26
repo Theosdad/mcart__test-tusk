@@ -1,0 +1,18 @@
+.components {
+    &__container {
+        margin-bottom: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    &__rating,
+    &__progress {
+        margin-bottom: 50px;
+    }
+    
+}

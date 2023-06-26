@@ -1,0 +1,28 @@
+.progress {
+    width: 300px;
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+
+    &__bar {
+        height: 100%;
+        background-color: #4caf50;
+        width: 55%;
+        transition: width 0.3s ease-in-out;
+    }
+
+
+    &__label {
+        font-size: 14px;
+        font-style: italic;
+        line-height: 20px;
+        text-align: center;
+        color: #151414;
+
+        position: absolute;
+        width: 100%;
+        top: 0;
+    }
+}

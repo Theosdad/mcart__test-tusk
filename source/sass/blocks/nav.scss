@@ -1,0 +1,62 @@
+.nav {
+    display: flex;
+    flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+
+        display: flex;
+        padding: 25px;
+        border: 1px solid black;
+        border-radius: 20px;
+        box-shadow: 0 1px 3px purple;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 15px;
+        }
+    }
+
+    &__link {
+        padding: 12px 8px;
+        position: relative;
+
+        &--purple {
+            color: purple;
+        }
+
+        &--green {
+            color: green;
+        }
+
+        &--blue {
+            color: blue;
+        }
+
+        &--orange {
+            color: orange;
+        }
+
+        &--black {
+            color: black;
+        }
+
+        &--red {
+            color: red;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: calc(100% - 16px);
+            height: 1px;
+            background-color: currentColor;
+            left: 8px;
+            bottom: 10px;
+        }
+    }
+}
